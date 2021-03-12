@@ -5,7 +5,7 @@
             <i @click="$emit('delete-task', task.id)" class="fas fa-times"></i> 
 
         </h3>
-        <p> {{ task.day }} </p>
+        <p> {{ task.description }} </p>
     </div>
 </template>
 
@@ -18,7 +18,7 @@
     }
 </script>
 
-<style scope>
+<style scoped>
 
 .fas {
   color: red;
