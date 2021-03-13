@@ -9,7 +9,7 @@
     {
       "text": "BCH",
       "description": "Bitcoin Cash",
-      "reminder": true,
+      "reminder": false,
       "id": 2
     },
     {
