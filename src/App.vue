@@ -41,35 +41,38 @@ export default {
       },
       toggleAddTask(){
         this.showAddTask =  !this.showAddTask
+      },
+      async fetchTasks() {
+        try {
+        const res = await fetch ('api/tasks')
+
+        const data = await res.json()
+
+        return data
+
+        } catch(error) {
+          console.error(error)
+        }
+      },
+      async fetchTask(id) {
+        try {
+        const res = await fetch (`api/tasks/${id}`)
+
+        const data = await res.json()
+
+        return data
+        
+        } catch(error) {
+          console.error(error)
+        }
       }
   },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: 'Task 1',
-        description: 'Lorem ipsum dolor',
-        reminder: true
-      },
-      {
-        id: 2,
-        text: 'Task 2',
-        description: 'Lorem ipsum dolor',
-        reminder: true
-      },
-      {
-        id: 3,
-        text: 'Task 3',
-        description: 'Lorem ipsum dolor',
-        reminder: true
-      },
-      {
-        id: 4,
-        text: 'Task 4',
-        description: 'Lorem ipsum dolor',
-        reminder: false
-      },
-    ]
+  async created() {
+      try {
+        this.tasks = await this.fetchTasks()
+      } catch(error) {
+        console.error(error)
+      }  
   }
 }
 </script>
