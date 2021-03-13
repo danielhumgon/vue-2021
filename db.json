@@ -1,22 +1,28 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "text": "Task 1",
-      "description": "Lorem ipsum dolor",
-      "reminder": true
+      "text": "AVAX",
+      "description": "Avalanche",
+      "reminder": true,
+      "id": 1
     },
     {
-      "id": "2",
-      "text": "Task 2",
-      "description": "Lorem ipsum dolor",
-      "reminder": true
+      "text": "BCH",
+      "description": "Bitcoin Cash",
+      "reminder": true,
+      "id": 2
     },
     {
-      "id": "3",
-      "text": "Task 3",
-      "description": "Lorem ipsum dolor",
-      "reminder": false
+      "text": "PNG",
+      "description": "Pangolin",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "BTC",
+      "description": "Bitcoin",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
