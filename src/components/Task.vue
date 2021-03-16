@@ -21,7 +21,7 @@
 <style scoped>
 
 .fas {
-  color: red;
+  color: #932432;
 }
 .task {
   background: #f4f4f4;
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 5px solid #3C1874;
 }
 .task h3 {
   display: flex;

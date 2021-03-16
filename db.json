@@ -17,12 +17,6 @@
       "description": "Pangolin",
       "reminder": true,
       "id": 3
-    },
-    {
-      "text": "BTC",
-      "description": "Bitcoin",
-      "reminder": false,
-      "id": 4
     }
   ]
 }
